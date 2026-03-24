@@ -1,0 +1,1 @@
+SELECT timesheet_type_id value, type_name label FROM public."timesheettype";

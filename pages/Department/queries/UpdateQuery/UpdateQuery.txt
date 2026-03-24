@@ -1,0 +1,4 @@
+UPDATE public."department" SET
+		"department_name" = '{{update_form.fieldState.department_name.isVisible ? update_form.formData.department_name : update_form.sourceData.department_name}}',
+		"description" = '{{update_form.fieldState.description.isVisible ? update_form.formData.description : update_form.sourceData.description}}'
+WHERE "department_id" = {{data_table.selectedRow.department_id}};

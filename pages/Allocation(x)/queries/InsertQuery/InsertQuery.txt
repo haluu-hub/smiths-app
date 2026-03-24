@@ -1,0 +1,12 @@
+INSERT INTO public."projectmemberallocation" (
+	"member_id",
+	"project_id",
+	"allocation_start",
+	"allocation_end",
+	"allocation_percentage")
+VALUES (
+	'{{insert_form.formData.member_id}}',
+	'{{insert_form.formData.project_id}}',
+	'{{insert_form.formData.allocation_start}}',
+	'{{insert_form.formData.allocation_end}}',
+	'{{insert_form.formData.allocation_percentage}}');

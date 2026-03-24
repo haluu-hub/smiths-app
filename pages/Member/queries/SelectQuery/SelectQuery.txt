@@ -1,0 +1,8 @@
+SELECT m.*, d.department_name, l.full_name leader_name FROM public."member" m
+LEFT JOIN department d on d.department_id = m.department_id
+LEFT JOIN member l on l.member_id = m.leader_id
+WHERE m.full_name ilike '%{{data_table.searchText || ""}}%'
+OR 
+    m.email ILIKE '%{{data_table.searchText || ""}}%'
+ORDER BY "{{data_table.sortOrder.column || 'email'}}" {{data_table.sortOrder.order || 'ASC'}}
+;

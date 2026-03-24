@@ -1,0 +1,33 @@
+{
+  "gitSyncId": "6721c9c0fe37692ef010db3e_e8ed5d06-4843-40e3-99bc-bd01d3cd88e2",
+  "unpublishedPage": {
+    "isHidden": true,
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 860.0,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0.0,
+          "minHeight": 900.0,
+          "parentColumnSpace": 1.0,
+          "parentRowSpace": 1.0,
+          "rightColumn": 1174.0,
+          "snapColumns": 64.0,
+          "snapRows": 125.0,
+          "topRow": 0.0,
+          "type": "CANVAS_WIDGET",
+          "version": 90.0,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "Allocation(x)",
+    "slug": "allocation-x"
+  }
+}

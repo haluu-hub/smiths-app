@@ -1,0 +1,20 @@
+INSERT INTO public."timesheet" (
+	"note",
+	"member_id",
+	"project_id",
+	"timesheet_type_id",
+	"working_date",
+	"estimated_hours",
+	"actual_hours",
+	"amount",
+	"week_id")
+VALUES (
+	{{this.params.note}},
+	{{this.params.member_id}},
+	{{this.params.project_id}},
+	{{this.params.timesheet_type_id}},
+	{{this.params.working_date}},
+	{{this.params.estimated_hours}},
+	{{this.params.actual_hours}},
+	{{this.params.amount}},
+	{{this.params.week_id}});

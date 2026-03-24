@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "0a533l1mkq",
+  "leftColumn": 35,
+  "minWidth": 120,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 35,
+  "mobileRightColumn": 51,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('Allocation', {\n  \"project_id\": data_table.selectedRow.project_id\n}, 'SAME_WINDOW');}}",
+  "parentColumnSpace": 12.00830078125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 51,
+  "text": "Allocate Member",
+  "tooltip": "Allocate member to project for tracking plan effort",
+  "topRow": 1,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "n6aadfrvpy",
+  "widgetName": "Button2"
+}

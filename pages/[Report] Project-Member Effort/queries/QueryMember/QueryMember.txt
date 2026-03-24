@@ -1,0 +1,1 @@
+SELECT member_id code, full_name name FROM MEMBER

@@ -1,0 +1,7 @@
+SELECT p.*, d.department_name department FROM project p
+LEFT JOIN department d ON d.department_id = p.department_id
+WHERE p.project_name ilike '%{{data_table.searchText || ""}}%'
+OR d.department_name ilike '%{{data_table.searchText || ""}}%'
+OR p.project_manager ilike '%{{data_table.searchText || ""}}%'
+ORDER BY active desc, "{{data_table.sortOrder.column || 'start_date'}}" {{data_table.sortOrder.order || 'DESC NULLS LAST'}}
+;

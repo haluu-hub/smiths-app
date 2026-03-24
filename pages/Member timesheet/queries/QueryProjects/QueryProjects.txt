@@ -1,0 +1,1 @@
+SELECT project_id value, project_name label FROM public."project";

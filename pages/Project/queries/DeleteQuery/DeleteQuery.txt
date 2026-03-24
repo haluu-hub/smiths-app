@@ -1,0 +1,2 @@
+DELETE FROM public."project"
+  WHERE "project_id" = {{data_table.triggeredRow.project_id}};

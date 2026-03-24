@@ -1,0 +1,7 @@
+SELECT pm.*, p.project_name, m.full_name FROM public."projectmemberallocation" pm
+LEFT JOIN project p on p.project_id = pm.project_id
+LEFT JOIN member m on m.member_id = pm.member_id
+WHERE p.project_id = {{SelectedProject.value}}
+ORDER BY "{{data_table.sortOrder.column || 'allocation_id'}}" {{data_table.sortOrder.order || 'ASC'}}
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

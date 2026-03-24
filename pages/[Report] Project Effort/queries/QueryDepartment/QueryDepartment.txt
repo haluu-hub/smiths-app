@@ -1,0 +1,1 @@
+SELECT department_name code, department_name name FROM DEPARTMENT

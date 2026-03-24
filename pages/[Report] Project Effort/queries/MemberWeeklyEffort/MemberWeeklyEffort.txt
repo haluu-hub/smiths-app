@@ -1,0 +1,3 @@
+select * from get_project_weekly_effort({{JSDateTimeUtils.getWeekNumber()}}, {{JSDateTimeUtils.getStartDate()}}, {{JSDateTimeUtils.getEndDate()}}) 
+where 
+({{ appsmith.store.selectedDepartments == null || appsmith.store.selectedDepartments.length == 0}} or department = ANY({{appsmith.store.selectedDepartments}}))

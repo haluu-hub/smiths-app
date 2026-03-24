@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "bottomRowBeforeCollapse": 10,
+  "boxShadow": "none",
+  "defaultText": "27",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": false,
+  "key": "1vbwyda0ft",
+  "label": "Week",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 13,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{MemberWeeklyEffort.run()}}",
+  "originalBottomRow": 10,
+  "originalTopRow": 3,
+  "parentColumnSpace": 23.5,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 18,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 3,
+  "topRowBeforeCollapse": 3,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "x3v83w9xxd",
+  "widgetName": "SelectedWeek"
+}

@@ -1,0 +1,9 @@
+SELECT t.*, p.project_name project, tt.type_name type FROM public."timesheet" t 
+LEFT JOIN project p on t.project_id = p.project_id 
+LEFT JOIN timesheettype tt on tt.timesheet_type_id = t.timesheet_type_id
+LEFT JOIN member m on m.member_id = t.member_id 
+WHERE m.email = '{{appsmith.user.email}}'
+AND t.working_date BETWEEN '{{FromDatePicker.selectedDate}}' AND '{{ToDatePicker.selectedDate}}'
+ORDER BY "{{data_table.sortOrder.column || 'timesheet_id'}}" {{data_table.sortOrder.order || 'ASC'}}
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

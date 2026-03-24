@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6729c18a41917211f5e49123_6e00599e-67f8-49b6-9578-b0074d1bab02",
+  "id": "[Report] Project Effort_DataConverter",
+  "unpublishedCollection": {
+    "name": "DataConverter",
+    "pageId": "[Report] Project Effort",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

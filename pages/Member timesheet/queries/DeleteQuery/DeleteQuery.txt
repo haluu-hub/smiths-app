@@ -1,0 +1,2 @@
+DELETE FROM public."timesheet"
+  WHERE "timesheet_id" = {{data_table.triggeredRow.timesheet_id}};

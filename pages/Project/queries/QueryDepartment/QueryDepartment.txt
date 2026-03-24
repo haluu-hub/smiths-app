@@ -1,0 +1,1 @@
+SELECT department_id value, department_name label FROM public."department";

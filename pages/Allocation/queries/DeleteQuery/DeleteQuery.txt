@@ -1,0 +1,2 @@
+DELETE FROM public."projectmemberallocation"
+  WHERE "allocation_id" = {{data_table.triggeredRow.allocation_id}};

@@ -1,0 +1,2 @@
+SELECT project_id value, project_name label FROM project 
+WHERE active = true

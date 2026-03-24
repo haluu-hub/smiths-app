@@ -1,0 +1,11 @@
+UPDATE public."timesheet" SET
+		"note" = '{{update_form.fieldState.note.isVisible ? update_form.formData.note : update_form.sourceData.note}}',
+		"member_id" = '{{update_form.fieldState.member_id.isVisible ? update_form.formData.member_id : update_form.sourceData.member_id}}',
+    "project_id" = '{{update_form.fieldState.project_id.isVisible ? update_form.formData.project_id : update_form.sourceData.project_id}}',
+		"timesheet_type_id" = '{{update_form.fieldState.timesheet_type_id.isVisible ? update_form.formData.timesheet_type_id : update_form.sourceData.timesheet_type_id}}',
+		"working_date" = '{{update_form.fieldState.working_date.isVisible ? update_form.formData.working_date : update_form.sourceData.working_date}}',
+		"estimated_hours" = '{{update_form.fieldState.estimated_hours.isVisible ? update_form.formData.estimated_hours : update_form.sourceData.estimated_hours}}',
+		"actual_hours" = '{{update_form.fieldState.actual_hours.isVisible ? update_form.formData.actual_hours : update_form.sourceData.actual_hours}}',
+		"amount" = '{{update_form.fieldState.amount.isVisible ? update_form.formData.amount : update_form.sourceData.amount}}',
+		"week_id" = '{{update_form.fieldState.week_id.isVisible ? update_form.formData.week_id : update_form.sourceData.week_id}}'
+WHERE "timesheet_id" = {{data_table.selectedRow.timesheet_id}};

@@ -1,0 +1,8 @@
+UPDATE public."member" SET
+		"full_name" = '{{update_form.fieldState.full_name.isVisible ? update_form.formData.full_name : update_form.sourceData.full_name}}',
+		"email" = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',
+    "department_id" = '{{update_form.fieldState.department_id.isVisible ? update_form.formData.department_id : update_form.sourceData.department_id}}',
+		"leader_id" = '{{update_form.fieldState.leader_id.isVisible ? update_form.formData.leader_id : update_form.sourceData.leader_id}}',
+		"inactive" = '{{update_form.fieldState.inactive.isVisible ? update_form.formData.inactive : update_form.sourceData.inactive}}',
+		"note" = '{{update_form.fieldState.note.isVisible ? update_form.formData.note : update_form.sourceData.note}}'
+WHERE "member_id" = {{data_table.selectedRow.member_id}};

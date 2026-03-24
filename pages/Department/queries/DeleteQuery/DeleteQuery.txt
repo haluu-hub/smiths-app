@@ -1,0 +1,2 @@
+DELETE FROM public."department"
+  WHERE "department_id" = {{data_table.triggeredRow.department_id}};

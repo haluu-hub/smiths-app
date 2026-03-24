@@ -1,0 +1,1 @@
+select * from get_weekly_effort({{JSDateTimeUtils.getWeekNumber2()}}, {{JSDateTimeUtils.getStartDate()}}, {{JSDateTimeUtils.getEndDate()}}) 

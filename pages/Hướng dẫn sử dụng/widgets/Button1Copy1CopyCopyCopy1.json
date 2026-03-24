@@ -1,0 +1,49 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 61,
+  "boxShadow": "none",
+  "buttonColor": "#1e3a8a",
+  "buttonVariant": "TERTIARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "i8xhwzunxw",
+  "leftColumn": 0,
+  "minWidth": 120,
+  "mobileBottomRow": 25,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 7,
+  "mobileTopRow": 21,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('Member timesheet', {}, 'SAME_WINDOW');}}",
+  "originalBottomRow": 61,
+  "originalTopRow": 57,
+  "parentColumnSpace": 20.21875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "START",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 10,
+  "text": "Danh sách timesheet",
+  "topRow": 57,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "zu6e8y64hf",
+  "widgetName": "Button1Copy1CopyCopyCopy1"
+}

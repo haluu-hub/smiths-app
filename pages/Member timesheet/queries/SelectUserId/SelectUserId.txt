@@ -1,0 +1,2 @@
+SELECT member_id FROM member 
+WHERE email = '{{appsmith.user.email}}'

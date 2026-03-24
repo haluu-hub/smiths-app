@@ -1,0 +1,4 @@
+SELECT * FROM public."department"
+WHERE "department_name" ilike '%{{data_table.searchText || ""}}%'
+ORDER BY "{{data_table.sortOrder.column || 'department_name'}}" {{data_table.sortOrder.order || 'ASC'}}
+;

@@ -1,0 +1,18 @@
+INSERT INTO public."project" (
+	"project_name",
+	"description",
+	"start_date",
+	"end_date",
+	"project_manager",
+	"project_type",
+	"department_id",
+	"active")
+VALUES (
+	'{{insert_form.formData.project_name}}',
+	'{{insert_form.formData.description}}',
+	'{{insert_form.formData.start_date != ""?insert_form.formData.start_date:null}}',
+	'{{insert_form.formData.end_date !=""?insert_form.formData.end_date:null}}',
+	'{{insert_form.formData.project_manager}}',
+	'{{insert_form.formData.project_type}}',
+	'{{insert_form.formData.department_id}}',
+	'{{insert_form.formData.active}}');

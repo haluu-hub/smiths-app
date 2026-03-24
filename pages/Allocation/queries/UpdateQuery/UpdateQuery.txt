@@ -1,0 +1,7 @@
+UPDATE public."projectmemberallocation" SET
+		"project_id" = '{{update_form.fieldState.project_id.isVisible ? update_form.formData.project_id : update_form.sourceData.project_id}}',
+    "member_id" = '{{update_form.fieldState.member_id.isVisible ? update_form.formData.member_id : update_form.sourceData.member_id}}',
+		"allocation_start" = '{{update_form.fieldState.allocation_start.isVisible ? update_form.formData.allocation_start : update_form.sourceData.allocation_start}}',
+		"allocation_end" = '{{update_form.fieldState.allocation_end.isVisible ? update_form.formData.allocation_end : update_form.sourceData.allocation_end}}',
+		"allocation_percentage" = '{{update_form.fieldState.allocation_percentage.isVisible ? update_form.formData.allocation_percentage : update_form.sourceData.allocation_percentage}}'
+WHERE "allocation_id" = {{data_table.selectedRow.allocation_id}};

@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6721c9c0fe37692ef010db3e_063b7833-a6d1-4ab2-9294-56fbd9e0ed92",
+  "id": "[Report] Project Weekly_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "[Report] Project Weekly",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

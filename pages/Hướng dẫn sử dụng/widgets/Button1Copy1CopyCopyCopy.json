@@ -1,0 +1,49 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 31,
+  "boxShadow": "none",
+  "buttonColor": "#1e3a8a",
+  "buttonVariant": "TERTIARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "i8xhwzunxw",
+  "leftColumn": 15,
+  "minWidth": 120,
+  "mobileBottomRow": 25,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 7,
+  "mobileTopRow": 21,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('https://apps.ntq.solutions/app/timesheet-for-member/member-timesheet-672ad34556f6bb0532b90806', {}, 'NEW_WINDOW');}}",
+  "originalBottomRow": 74,
+  "originalTopRow": 70,
+  "parentColumnSpace": 20.21875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "START",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 23,
+  "text": "Link khai timesheet",
+  "topRow": 27,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "aqaabycy8h",
+  "widgetName": "Button1Copy1CopyCopyCopy"
+}

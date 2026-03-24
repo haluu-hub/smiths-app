@@ -1,0 +1,2 @@
+SELECT project_id code, project_name name FROM project 
+WHERE active = true

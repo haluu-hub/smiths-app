@@ -1,0 +1,19 @@
+SELECT 
+    p.project_name,
+    -- Each week as a separate column using the parameterized week values
+    SUM(CASE WHEN t.week_id = {{SelectedWeek.value}} THEN t.actual_hours ELSE 0 END) AS week_1,
+    SUM(CASE WHEN t.week_id = {{SelectedWeek.value+1}} THEN t.actual_hours ELSE 0 END) AS week_2,
+    SUM(CASE WHEN t.week_id = {{SelectedWeek.value+2}} THEN t.actual_hours ELSE 0 END) AS week_3,
+    SUM(CASE WHEN t.week_id = {{SelectedWeek.value+3}} THEN t.actual_hours ELSE 0 END) AS week_4,
+    SUM(CASE WHEN t.week_id = {{SelectedWeek.value+4}} THEN t.actual_hours ELSE 0 END) AS week_5,
+		SUM(CASE WHEN t.week_id BETWEEN {{SelectedWeek.value}} AND {{SelectedWeek.value + 4}} THEN t.actual_hours ELSE 0 END) AS total_effort
+FROM 
+    public.timesheet t
+JOIN 
+    public.project p ON t.project_id = p.project_id
+WHERE 
+    EXTRACT(YEAR FROM t.working_date) = {{SelectedYear.value}}
+GROUP BY 
+    p.project_id, p.project_name
+ORDER BY 
+    p.project_name;

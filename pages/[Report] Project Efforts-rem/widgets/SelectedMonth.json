@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( new Date().getMonth() + 1))(SelectedMonth.options, SelectedMonth.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "02dimsdy1q",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Month",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 6,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{JSDateTimeUtils.getWeekNumber();\nMemberWeeklyEffort.run()}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 23.5,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Select month",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 12,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": 1,\n    \"code\": 1\n  },\n  {\n    \"name\": \"2\",\n    \"code\": 2\n  },\n  {\n    \"name\": 3,\n    \"code\": 3\n  },\n  {\n    \"name\": 4,\n    \"code\": 4\n  },\n  {\n    \"name\": 5,\n    \"code\": 5\n  },\n  {\n    \"name\": 6,\n    \"code\": 6\n  },\n  {\n    \"name\": 7,\n    \"code\": 7\n  },\n  {\n    \"name\": 8,\n    \"code\": 8\n  },\n  {\n    \"name\": 9,\n    \"code\": 9\n  },\n  {\n    \"name\": 10,\n    \"code\": 10\n  },\n  {\n    \"name\": 11,\n    \"code\": 11\n  },\n  {\n    \"name\": \"12\",\n    \"code\": \"12\"\n  }\n]",
+  "topRow": 3,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "039yclyt8h",
+  "widgetName": "SelectedMonth"
+}

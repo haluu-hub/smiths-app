@@ -1,0 +1,65 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultText": "{{JSDateTimeUtils.getFirstWeekOfCurrentMonth(1)}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "1vbwyda0ft",
+  "label": "From Week",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 5,
+  "maxDynamicHeight": 9000,
+  "maxNum": "53",
+  "minDynamicHeight": 4,
+  "minNum": "0",
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{DataWithCond.run()}}",
+  "parentColumnSpace": 23.5,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 10,
+  "shouldAllowAutofill": false,
+  "showStepArrows": true,
+  "topRow": 3,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "x3v83w9xxd",
+  "widgetName": "SelectedWeek"
+}

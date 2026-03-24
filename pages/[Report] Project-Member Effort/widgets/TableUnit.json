@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( TableUnit.sourceData[0].value))(TableUnit.options, TableUnit.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "6jtbpqfatt",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Unit",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 11,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 51,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 20.21875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Unit",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 17,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"label\": \"% Effort\",\n    \"value\": 0.375 \n  },\n  {\n    \"label\": \"hours\",\n    \"value\": 1\n  }\n]",
+  "topRow": 3,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "upe1xicalf",
+  "widgetName": "TableUnit"
+}

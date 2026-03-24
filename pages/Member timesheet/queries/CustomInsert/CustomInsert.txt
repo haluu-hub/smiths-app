@@ -1,0 +1,20 @@
+INSERT INTO public."timesheet" (
+	"note",
+	"member_id",
+	"project_id",
+	"timesheet_type_id",
+	"working_date",
+	"estimated_hours",
+	"actual_hours",
+	"amount",
+	"week_id")
+VALUES (
+	{{appsmith.store.row.note}},
+	{{appsmith.store.row.member_id}},
+	{{appsmith.store.row.project_id}},
+	{{appsmith.store.row.timesheet_type_id}},
+	{{appsmith.store.selectedDate}},
+	{{appsmith.store.row.estimated_hours}},
+	{{appsmith.store.row.actual_hours}},
+	{{appsmith.store.row.amount}},
+	{{appsmith.store.row.week_id}});

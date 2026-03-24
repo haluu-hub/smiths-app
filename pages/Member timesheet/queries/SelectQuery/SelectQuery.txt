@@ -1,0 +1,10 @@
+SELECT p.project_name project, m.full_name, tt.type_name type, t.* FROM public."timesheet" t 
+LEFT JOIN project p on t.project_id = p.project_id 
+LEFT JOIN timesheettype tt on tt.timesheet_type_id = t.timesheet_type_id
+LEFT JOIN member m on m.member_id = t.member_id LEFT JOIN member m2 on m2.member_id = m.leader_id 
+WHERE 
+--(m.email = '{{appsmith.user.email}}' or m2.email = '{{appsmith.user.email}}') AND 
+t.working_date BETWEEN '{{FromDatePicker.selectedDate}}' AND '{{ToDatePicker.selectedDate}}' AND 
+(m.full_name ILIKE '%{{data_table.searchText || ""}}%' OR
+p.project_name ILIKE '%{{data_table.searchText || ""}}%')
+ORDER BY "{{data_table.sortOrder.column || 'working_date'}}" {{data_table.sortOrder.order || 'ASC'}};

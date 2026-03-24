@@ -1,0 +1,4 @@
+UPDATE public."timesheettype" SET
+		"type_name" = '{{update_form.fieldState.type_name.isVisible ? update_form.formData.type_name : update_form.sourceData.type_name}}',
+		"description" = '{{update_form.fieldState.description.isVisible ? update_form.formData.description : update_form.sourceData.description}}'
+WHERE "timesheet_type_id" = {{data_table.selectedRow.timesheet_type_id}};

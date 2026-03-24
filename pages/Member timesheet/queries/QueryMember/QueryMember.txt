@@ -1,0 +1,1 @@
+SELECT member_id value, full_name label FROM public."member" where inactive is null or inactive = false ORDER BY full_name;

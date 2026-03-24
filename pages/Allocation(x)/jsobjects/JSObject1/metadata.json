@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6721c9c0fe37692ef010db3e_c5deee41-260e-4ea1-924a-9e0c920b8015",
+  "id": "Allocation(x)_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Allocation(x)",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

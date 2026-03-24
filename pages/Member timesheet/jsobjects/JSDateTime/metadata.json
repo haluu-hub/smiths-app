@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6721c9c0fe37692ef010db3e_0d076c80-bee2-4021-aae6-dfa90ef1d944",
+  "id": "Member timesheet_JSDateTime",
+  "unpublishedCollection": {
+    "name": "JSDateTime",
+    "pageId": "Member timesheet",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

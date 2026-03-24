@@ -1,0 +1,6 @@
+INSERT INTO public."timesheettype" (
+	"type_name",
+	"description")
+VALUES (
+	'{{insert_form.formData.type_name}}',
+	'{{insert_form.formData.description}}');

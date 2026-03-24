@@ -1,0 +1,20 @@
+INSERT INTO public."timesheet" (
+	"note",
+	"member_id",
+	"project_id",
+	"timesheet_type_id",
+	"working_date",
+	"estimated_hours",
+	"actual_hours",
+	"amount",
+	"week_id")
+VALUES (
+	'{{insert_form.formData.note}}',
+	'{{insert_form.formData.member_id}}',
+	'{{insert_form.formData.project_id}}',
+	'{{insert_form.formData.timesheet_type_id}}',
+	'{{insert_form.formData.working_date}}',
+	'{{insert_form.formData.estimated_hours}}',
+	'{{insert_form.formData.actual_hours}}',
+	'{{insert_form.formData.amount}}',
+	'{{insert_form.formData.week_id}}');

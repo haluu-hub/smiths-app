@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6729c18a41917211f5e49123_15d9ee98-ed18-460f-92d0-455a947d2b34",
+  "id": "NxTrans Reports_JSDateUtils",
+  "unpublishedCollection": {
+    "name": "JSDateUtils",
+    "pageId": "NxTrans Reports",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6729c18a41917211f5e49123_2ca6c8b8-130a-40ec-b599-3402d6580e4c",
+  "id": "Member timesheet_JSData",
+  "unpublishedCollection": {
+    "name": "JSData",
+    "pageId": "Member timesheet",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

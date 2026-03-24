@@ -1,0 +1,6 @@
+select * from get_project_member_weekly_effort({{JSDateTimeUtils.getWeekNumber()}}, {{JSDateTimeUtils.getStartDate()}}, {{JSDateTimeUtils.getEndDate()}}) 
+where 
+({{ appsmith.store.selectedProjects == null || appsmith.store.selectedProjects.length == 0}} or p = ANY({{appsmith.store.selectedProjects}}))
+AND 
+({{ appsmith.store.selectedMembers == null || appsmith.store.selectedMembers.length == 0}} or m = ANY({{appsmith.store.selectedMembers}}))
+order by project
