@@ -16,7 +16,7 @@
       }
     },
     "colors": {
-      "backgroundColor": "#FAFA33",
+      "backgroundColor": "#fff1f2",
       "primaryColor": "#ef4444"
     },
     "fontFamily": {
@@ -46,7 +46,7 @@
       "appBoxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
     },
     "colors": {
-      "backgroundColor": "#FAFA33",
+      "backgroundColor": "#f3e8ff",
       "primaryColor": "#e2cff7"
     },
     "fontFamily": {
