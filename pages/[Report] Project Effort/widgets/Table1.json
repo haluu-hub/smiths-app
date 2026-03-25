@@ -48,7 +48,9 @@
     "pl4",
     "at4",
     "pl5",
-    "at5"
+    "at5",
+    "own_project_effort",
+    "support_project_effort"
   ],
   "columnUpdatedAt": 1742199044781,
   "columnWidthMap": {
@@ -148,6 +150,12 @@
     },
     {
       "key": "primaryColumns.at5.computedValue"
+    },
+    {
+      "key": "primaryColumns.own_project_effort.computedValue"
+    },
+    {
+      "key": "primaryColumns.support_project_effort.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -788,6 +796,64 @@
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "own_project_effort": {
+      "alias": "own_project_effort",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "number",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"own_project_effort\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "own_project_effort",
+      "index": 18,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Effort dự án của mình",
+      "notation": "standard",
+      "originalId": "own_project_effort",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "support_project_effort": {
+      "alias": "support_project_effort",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "number",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"support_project_effort\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "support_project_effort",
+      "index": 19,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Effort support dự án khác",
+      "notation": "standard",
+      "originalId": "support_project_effort",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
       "verticalAlignment": "CENTER",
       "width": 150
     }
