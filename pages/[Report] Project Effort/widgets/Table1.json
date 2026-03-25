@@ -48,9 +48,7 @@
     "pl4",
     "at4",
     "pl5",
-    "at5",
-    "own_project_effort",
-    "support_project_effort"
+    "at5"
   ],
   "columnUpdatedAt": 1774420117256,
   "columnWidthMap": {
@@ -150,12 +148,6 @@
     },
     {
       "key": "primaryColumns.at5.computedValue"
-    },
-    {
-      "key": "primaryColumns.own_project_effort.computedValue"
-    },
-    {
-      "key": "primaryColumns.support_project_effort.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
