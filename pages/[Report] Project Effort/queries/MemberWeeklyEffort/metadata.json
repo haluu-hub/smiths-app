@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "MemberWeeklyEffort",
     "pageId": "[Report] Project Effort",
     "userSetOnLoad": false

@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 84,
+  "bottomRow": 83,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -52,7 +52,7 @@
     "own_project_effort",
     "support_project_effort"
   ],
-  "columnUpdatedAt": 1742199044781,
+  "columnUpdatedAt": 1774420117256,
   "columnWidthMap": {
     "Act_W12": 92,
     "Act_W13": 91,
@@ -184,8 +184,8 @@
   "mobileRightColumn": 9,
   "mobileTopRow": 16,
   "needsErrorInfo": false,
-  "originalBottomRow": 84,
-  "originalTopRow": 15,
+  "originalBottomRow": 91,
+  "originalTopRow": 22,
   "parentColumnSpace": 23.5,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -862,7 +862,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "tableData": "{{DataConverter.getMemberWeeklyEffort()}}",
+  "tableData": "{{currentRow.support_project_effort}}",
   "textSize": "0.875rem",
   "topRow": 15,
   "totalRecordsCount": 0,
