@@ -1,0 +1,25 @@
+-- Dưới đây là mẫu gợi ý để bạn (hoặc quản trị viên cơ sở dữ liệu) cập nhật hàm tính toán
+-- Để phần mềm Timesheet for Manager hiển thị được 2 loại Effort, hàm này buộc phải sửa từ dưới Database.
+
+-- Mở Postgres và tìm kiếm/Sửa lại Function: get_project_weekly_effort
+CREATE OR REPLACE FUNCTION public.get_project_weekly_effort(
+    -- (Các tham số tuần, ngày bắt đầu, ngày kết thúc giữ nguyên)
+)
+RETURNS TABLE (
+    -- ... các trường dữ liệu tĩnh khác (giữ nguyên),
+    own_project_effort NUMERIC,      -- Cột mới thay cho effort tổng cũ
+    support_project_effort NUMERIC   -- Cột mới hiển thị effort support
+)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    RETURN QUERY
+    SELECT 
+        -- ... các trường khác,
+        SUM(CASE WHEN t.is_support = false THEN t.actual_hours ELSE 0 END) AS own_project_effort,
+        SUM(CASE WHEN t.is_support = true THEN t.actual_hours ELSE 0 END) AS support_project_effort
+    FROM public.timesheet t
+    -- WHERE ... (điều kiện giữ nguyên)
+    GROUP BY ... ;
+END;
+$$;

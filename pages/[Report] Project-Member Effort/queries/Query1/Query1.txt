@@ -1,0 +1,1 @@
+ALTER TABLE public."timesheet" ADD COLUMN "is_support" BOOLEAN DEFAULT FALSE;
