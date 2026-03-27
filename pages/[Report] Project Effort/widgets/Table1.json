@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 83,
+  "bottomRow": 94,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -48,9 +48,11 @@
     "pl4",
     "at4",
     "pl5",
-    "at5"
+    "at5",
+    "own_project_effort",
+    "support_project_effort"
   ],
-  "columnUpdatedAt": 1774420117256,
+  "columnUpdatedAt": 1774421497610,
   "columnWidthMap": {
     "Act_W12": 92,
     "Act_W13": 91,
@@ -67,12 +69,14 @@
     "at3": 107,
     "at4": 90,
     "at5": 100,
+    "own_project_effort": 118,
     "p": 77,
     "pl1": 99,
     "pl2": 86,
     "pl3": 78,
     "pl4": 78,
     "pl5": 83,
+    "support_project_effort": 113,
     "tat": 135,
     "tpl": 100
   },
@@ -148,6 +152,12 @@
     },
     {
       "key": "primaryColumns.at5.computedValue"
+    },
+    {
+      "key": "primaryColumns.support_project_effort.computedValue"
+    },
+    {
+      "key": "primaryColumns.own_project_effort.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -176,8 +186,8 @@
   "mobileRightColumn": 9,
   "mobileTopRow": 16,
   "needsErrorInfo": false,
-  "originalBottomRow": 91,
-  "originalTopRow": 22,
+  "originalBottomRow": 83,
+  "originalTopRow": 15,
   "parentColumnSpace": 23.5,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -459,7 +469,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"own_project_effort\"]))}}",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.own_project_effort))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -475,7 +485,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Effort dự án của mình",
+      "label": "Owner PJ",
       "notation": "standard",
       "originalId": "own_project_effort",
       "textSize": "0.875rem",
@@ -757,7 +767,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"support_project_effort\"]))}}",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.support_project_effort))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -773,7 +783,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Effort support dự án khác",
+      "label": "Support PJ",
       "notation": "standard",
       "originalId": "support_project_effort",
       "textSize": "0.875rem",
