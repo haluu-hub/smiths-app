@@ -174,6 +174,12 @@
     },
     {
       "key": "schema.__root_schema__.children.project_type.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.has_timesheet.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.has_timesheet.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -192,6 +198,9 @@
     },
     {
       "key": "schema.__root_schema__.children.active.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.has_timesheet.defaultValue"
     }
   ],
   "dynamicTriggerPathList": [
@@ -344,6 +353,26 @@
           "shortcuts": false,
           "sourceData": "2024-12-31",
           "timePrecision": "None"
+        },
+        "has_timesheet": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "has_timesheet",
+          "alignWidget": "LEFT",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "boolean",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.has_timesheet))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Switch",
+          "identifier": "has_timesheet",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Has Timesheet",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "has_timesheet",
+          "position": 9,
+          "sourceData": false
         },
         "project_manager": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT p.*, d.department_name department FROM project p\nLEFT JOIN department d ON d.department_id = p.department_id\nWHERE p.project_name ilike '%{{data_table.searchText || \"\"}}%'\nOR d.department_name ilike '%{{data_table.searchText || \"\"}}%'\nOR p.project_manager ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY active desc, \"{{data_table.sortOrder.column || 'start_date'}}\" {{data_table.sortOrder.order || 'DESC NULLS LAST'}}\n;",
+      "body": "SELECT p.*, d.department_name department, \n  EXISTS(SELECT 1 FROM timesheet t WHERE t.project_id = p.project_id) as has_timesheet\nFROM project p\nLEFT JOIN department d ON d.department_id = p.department_id\nWHERE p.project_name ilike '%{{data_table.searchText || \"\"}}%'\nOR d.department_name ilike '%{{data_table.searchText || \"\"}}%'\nOR p.project_manager ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY active desc, \"{{data_table.sortOrder.column || 'start_date'}}\" {{data_table.sortOrder.order || 'DESC NULLS LAST'}}\n;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

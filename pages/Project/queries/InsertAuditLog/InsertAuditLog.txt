@@ -1,0 +1,14 @@
+INSERT INTO public."project_history" (
+    action_type, 
+    project_id, 
+    project_name, 
+    action_by, 
+    details
+)
+VALUES (
+    {{this.params.action}}, 
+    {{this.params.id}}, 
+    {{this.params.name}}, 
+    '{{appsmith.user.email}}', 
+    {{this.params.details}}
+);

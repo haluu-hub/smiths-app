@@ -255,7 +255,7 @@
   "leftColumn": 45,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+  "onSubmit": "{{\n  UpdateQuery.run()\n    .then(() => InsertAuditLog.run({ \n        action: 'UPDATE', \n        id: update_form.formData.project_id, \n        name: update_form.formData.project_name, \n        details: 'Manager updated project info' \n    }))\n    .then(() => SelectQuery.run())\n    .then(() => closeModal('Update_Modal'))\n    .then(() => showAlert('✅ Cập nhật và lưu Log thành công!', 'success'))\n    .catch((e) => showAlert('Lỗi: ' + e, 'error'));\n}}",
   "originalBottomRow": 86,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,

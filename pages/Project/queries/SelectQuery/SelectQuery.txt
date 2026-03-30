@@ -1,4 +1,6 @@
-SELECT p.*, d.department_name department FROM project p
+SELECT p.*, d.department_name department, 
+  EXISTS(SELECT 1 FROM timesheet t WHERE t.project_id = p.project_id) as has_timesheet
+FROM project p
 LEFT JOIN department d ON d.department_id = p.department_id
 WHERE p.project_name ilike '%{{data_table.searchText || ""}}%'
 OR d.department_name ilike '%{{data_table.searchText || ""}}%'

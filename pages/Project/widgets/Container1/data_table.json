@@ -32,14 +32,15 @@
     "end_date",
     "department_id",
     "active",
-    "customColumn1"
+    "customColumn1",
+    "has_timesheet"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1733973452951,
+  "columnUpdatedAt": 1774839089952,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -123,6 +124,12 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.has_timesheet.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
@@ -131,6 +138,12 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isDisabled"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -220,12 +233,12 @@
       "index": 5,
       "isCellVisible": true,
       "isDerived": true,
-      "isDisabled": false,
+      "isDisabled": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow.has_timesheet))}}",
       "isVisible": true,
       "label": "Delete",
       "labelColor": "#FFFFFF",
       "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
+      "onClick": "{{\n  DeleteQuery.run()\n    .then(() => InsertAuditLog.run({ \n        action: 'DELETE', \n        id: data_table.selectedRow.project_id, \n        name: data_table.selectedRow.project_name, \n        details: 'Manager deleted project' \n    }))\n    .then(() => SelectQuery.run())\n    .then(() => closeModal('Delete_Modal'))\n    .then(() => showAlert('✅ Đã xoá và lưu Log!', 'success'))\n    .catch((e) => showAlert('Lỗi: ' + e, 'error'));\n}}",
       "sticky": "",
       "width": 150
     },
@@ -359,6 +372,40 @@
       "notation": "standard",
       "originalId": "end_date",
       "outputFormat": "YYYY-MM-DD",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "has_timesheet": {
+      "alias": "has_timesheet",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "checkbox",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"has_timesheet\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "has_timesheet",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "has_timesheet",
+      "notation": "standard",
+      "originalId": "has_timesheet",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
