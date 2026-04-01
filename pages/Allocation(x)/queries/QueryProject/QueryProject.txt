@@ -1,2 +1,2 @@
 SELECT project_id value, project_name label FROM project 
-WHERE active = true
+WHERE active = true ORDER BY project_name ASC LIMIT 10000

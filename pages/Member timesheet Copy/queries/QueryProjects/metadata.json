@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT project_id value, project_name label FROM public.\"project\";",
+      "body": "SELECT project_id value, project_name label FROM public.\"project\" ORDER BY project_name ASC LIMIT 10000;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

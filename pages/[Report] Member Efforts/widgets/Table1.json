@@ -147,6 +147,36 @@
     },
     {
       "key": "primaryColumns.m.computedValue"
+    },
+    {
+      "key": "primaryColumns.at1.label"
+    },
+    {
+      "key": "primaryColumns.pl1.label"
+    },
+    {
+      "key": "primaryColumns.at2.label"
+    },
+    {
+      "key": "primaryColumns.pl2.label"
+    },
+    {
+      "key": "primaryColumns.at3.label"
+    },
+    {
+      "key": "primaryColumns.pl3.label"
+    },
+    {
+      "key": "primaryColumns.at4.label"
+    },
+    {
+      "key": "primaryColumns.pl4.label"
+    },
+    {
+      "key": "primaryColumns.at5.label"
+    },
+    {
+      "key": "primaryColumns.pl5.label"
     }
   ],
   "dynamicPropertyPathList": [
@@ -203,7 +233,7 @@
       "alias": "at1",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.at1 > currentRow.pl1? 'red' : 'lightgreen'))}}",
+      "cellBackground": "{{JSObject1.getColor(currentRow.pl1, currentRow.at1)}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"at1\"]))}}",
       "currencyCode": "USD",
@@ -221,7 +251,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "W1 Actual",
+      "label": "A. W{{SelectedWeek.text}}",
       "notation": "standard",
       "originalId": "at1",
       "sticky": "",
@@ -235,7 +265,7 @@
       "alias": "at2",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.at2 > currentRow.pl2? 'red' : 'lightgreen'))}}",
+      "cellBackground": "{{JSObject1.getColor(currentRow.pl2, currentRow.at2)}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"at2\"]))}}",
       "currencyCode": "USD",
@@ -253,7 +283,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "W2 Actual",
+      "label": "A. W{{Number(SelectedWeek.text) + 1}}",
       "notation": "standard",
       "originalId": "at2",
       "sticky": "",
@@ -267,7 +297,7 @@
       "alias": "at3",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.at3 > currentRow.pl3? 'red' : 'lightgreen'))}}",
+      "cellBackground": "{{JSObject1.getColor(currentRow.pl3, currentRow.at3)}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"at3\"]))}}",
       "currencyCode": "USD",
@@ -285,7 +315,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "W3 Actual",
+      "label": "A. W{{Number(SelectedWeek.text) + 2}}",
       "notation": "standard",
       "originalId": "at3",
       "sticky": "",
@@ -299,7 +329,7 @@
       "alias": "at4",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.at4 > currentRow.pl4? 'red' : 'lightgreen'))}}",
+      "cellBackground": "{{JSObject1.getColor(currentRow.pl4, currentRow.at4)}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"at4\"]))}}",
       "currencyCode": "USD",
@@ -317,7 +347,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "W4 Actual",
+      "label": "A. W{{Number(SelectedWeek.text) + 3}}",
       "notation": "standard",
       "originalId": "at4",
       "sticky": "",
@@ -331,7 +361,7 @@
       "alias": "at5",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.at5 > currentRow.pl5? 'red' : 'lightgreen'))}}",
+      "cellBackground": "{{JSObject1.getColor(currentRow.pl5, currentRow.at5)}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"at5\"]))}}",
       "currencyCode": "USD",
@@ -349,7 +379,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "W5 Actual",
+      "label": "A. W{{Number(SelectedWeek.text) + 4}}",
       "notation": "standard",
       "originalId": "at5",
       "sticky": "",
@@ -482,7 +512,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "W1 Plan",
+      "label": "P. W{{SelectedWeek.text}}",
       "notation": "standard",
       "originalId": "pl1",
       "sticky": "",
@@ -513,7 +543,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "W2 Plan",
+      "label": "P. W{{Number(SelectedWeek.text) + 1}}",
       "notation": "standard",
       "originalId": "pl2",
       "sticky": "",
@@ -544,7 +574,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "W3 Plan",
+      "label": "P. W{{Number(SelectedWeek.text) + 2}}",
       "notation": "standard",
       "originalId": "pl3",
       "sticky": "",
@@ -575,7 +605,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "W4 Plan",
+      "label": "P. W{{Number(SelectedWeek.text) + 3}}",
       "notation": "standard",
       "originalId": "pl4",
       "sticky": "",
@@ -606,7 +636,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "W5 Plan",
+      "label": "P. W{{Number(SelectedWeek.text) + 4}}",
       "notation": "standard",
       "originalId": "pl5",
       "sticky": "",

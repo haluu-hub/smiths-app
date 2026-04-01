@@ -1,1 +1,1 @@
-SELECT project_id value, project_name label FROM public."project";
+SELECT project_id value, project_name label FROM public."project" ORDER BY project_name ASC LIMIT 10000;
