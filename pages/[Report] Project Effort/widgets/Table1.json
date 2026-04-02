@@ -261,7 +261,7 @@
       "width": 150
     },
     "at1": {
-      "alias": "at1",
+      "alias": "W1 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -283,7 +283,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "at1",
+      "label": "W1 Actual",
       "notation": "standard",
       "originalId": "at1",
       "sticky": "",
@@ -295,7 +295,7 @@
       "width": 150
     },
     "at2": {
-      "alias": "at2",
+      "alias": "W2 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -317,7 +317,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "at2",
+      "label": "W2 Actual",
       "notation": "standard",
       "originalId": "at2",
       "sticky": "",
@@ -329,7 +329,7 @@
       "width": 150
     },
     "at3": {
-      "alias": "at3",
+      "alias": "W3 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -351,7 +351,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "at3",
+      "label": "W3 Actual",
       "notation": "standard",
       "originalId": "at3",
       "sticky": "",
@@ -363,7 +363,7 @@
       "width": 150
     },
     "at4": {
-      "alias": "at4",
+      "alias": "W4 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -385,7 +385,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "at4",
+      "label": "W4 Actual",
       "notation": "standard",
       "originalId": "at4",
       "sticky": "",
@@ -397,7 +397,7 @@
       "width": 150
     },
     "at5": {
-      "alias": "at5",
+      "alias": "W5 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -419,7 +419,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "at5",
+      "label": "W5 Actual",
       "notation": "standard",
       "originalId": "at5",
       "sticky": "",
@@ -528,7 +528,7 @@
       "width": 150
     },
     "pl1": {
-      "alias": "pl1",
+      "alias": "W1 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -550,7 +550,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "pl1",
+      "label": "W1 Plan",
       "notation": "standard",
       "originalId": "pl1",
       "sticky": "",
@@ -562,7 +562,7 @@
       "width": 150
     },
     "pl2": {
-      "alias": "pl2",
+      "alias": "W2 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -584,7 +584,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "pl2",
+      "label": "W2 Plan",
       "notation": "standard",
       "originalId": "pl2",
       "sticky": "",
@@ -596,7 +596,7 @@
       "width": 150
     },
     "pl3": {
-      "alias": "pl3",
+      "alias": "W3 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -618,7 +618,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "pl3",
+      "label": "W3 Plan",
       "notation": "standard",
       "originalId": "pl3",
       "sticky": "",
@@ -630,7 +630,7 @@
       "width": 150
     },
     "pl4": {
-      "alias": "pl4",
+      "alias": "W4 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -652,7 +652,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "pl4",
+      "label": "W4 Plan",
       "notation": "standard",
       "originalId": "pl4",
       "sticky": "",
@@ -664,7 +664,7 @@
       "width": 150
     },
     "pl5": {
-      "alias": "pl5",
+      "alias": "W5 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -686,7 +686,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "pl5",
+      "label": "W5 Plan",
       "notation": "standard",
       "originalId": "pl5",
       "sticky": "",
@@ -792,7 +792,7 @@
       "width": 150
     },
     "tat": {
-      "alias": "tat",
+      "alias": "Total Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -826,7 +826,7 @@
       "width": 150
     },
     "tpl": {
-      "alias": "tpl",
+      "alias": "Total Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -848,7 +848,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "tpl",
+      "label": "Total Plan",
       "notation": "standard",
       "originalId": "tpl",
       "sticky": "",

@@ -275,10 +275,10 @@
       "width": 150
     },
     "at1": {
-      "alias": "at1",
+      "alias": "W1 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => (Number(currentRow.at1) > Number(currentRow.pl1) ? '#f296a7' : (Number(currentRow.at1) < Number(currentRow.pl1) ? '#48CAE4' : 'transparent')))}}",
+      "cellBackground": "{{Number(currentRow.at1) > Number(currentRow.pl1) ? '#f296a7' : (Number(currentRow.at1) < Number(currentRow.pl1) ? '#48CAE4' : 'transparent')}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"at1\"]))}}",
       "currencyCode": "USD",
@@ -309,10 +309,10 @@
       "width": 150
     },
     "at2": {
-      "alias": "at2",
+      "alias": "W2 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => (Number(currentRow.at2) > Number(currentRow.pl2) ? '#f296a7' : (Number(currentRow.at2) < Number(currentRow.pl2) ? '#48CAE4' : 'transparent')))}}",
+      "cellBackground": "{{Number(currentRow.at2) > Number(currentRow.pl2) ? '#f296a7' : (Number(currentRow.at2) < Number(currentRow.pl2) ? '#48CAE4' : 'transparent')}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"at2\"]))}}",
       "currencyCode": "USD",
@@ -343,10 +343,10 @@
       "width": 150
     },
     "at3": {
-      "alias": "at3",
+      "alias": "W3 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => (Number(currentRow.at3) > Number(currentRow.pl3) ? '#f296a7' : (Number(currentRow.at3) < Number(currentRow.pl3) ? '#48CAE4' : 'transparent')))}}",
+      "cellBackground": "{{Number(currentRow.at3) > Number(currentRow.pl3) ? '#f296a7' : (Number(currentRow.at3) < Number(currentRow.pl3) ? '#48CAE4' : 'transparent')}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"at3\"]))}}",
       "currencyCode": "USD",
@@ -377,10 +377,10 @@
       "width": 150
     },
     "at4": {
-      "alias": "at4",
+      "alias": "W4 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => (Number(currentRow.at4) > Number(currentRow.pl4) ? '#f296a7' : (Number(currentRow.at4) < Number(currentRow.pl4) ? '#48CAE4' : 'transparent')))}}",
+      "cellBackground": "{{Number(currentRow.at4) > Number(currentRow.pl4) ? '#f296a7' : (Number(currentRow.at4) < Number(currentRow.pl4) ? '#48CAE4' : 'transparent')}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"at4\"]))}}",
       "currencyCode": "USD",
@@ -411,10 +411,10 @@
       "width": 150
     },
     "at5": {
-      "alias": "at5",
+      "alias": "W5 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => (Number(currentRow.at5) > Number(currentRow.pl5) ? '#f296a7' : (Number(currentRow.at5) < Number(currentRow.pl5) ? '#48CAE4' : 'transparent')))}}",
+      "cellBackground": "{{Number(currentRow.at5) > Number(currentRow.pl5) ? '#f296a7' : (Number(currentRow.at5) < Number(currentRow.pl5) ? '#48CAE4' : 'transparent')}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"at5\"]))}}",
       "currencyCode": "USD",
@@ -547,7 +547,7 @@
       "width": 150
     },
     "pl1": {
-      "alias": "pl1",
+      "alias": "W1 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -581,7 +581,7 @@
       "width": 150
     },
     "pl2": {
-      "alias": "pl2",
+      "alias": "W2 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -615,7 +615,7 @@
       "width": 150
     },
     "pl3": {
-      "alias": "pl3",
+      "alias": "W3 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -649,7 +649,7 @@
       "width": 150
     },
     "pl4": {
-      "alias": "pl4",
+      "alias": "W4 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -683,7 +683,7 @@
       "width": 150
     },
     "pl5": {
-      "alias": "pl5",
+      "alias": "W5 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -748,7 +748,7 @@
       "width": 150
     },
     "tat": {
-      "alias": "tat",
+      "alias": "Total Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -782,7 +782,7 @@
       "width": 150
     },
     "tpl": {
-      "alias": "tpl",
+      "alias": "Total Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -804,7 +804,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "tpl",
+      "label": "Total Plan",
       "notation": "standard",
       "originalId": "tpl",
       "sticky": "",

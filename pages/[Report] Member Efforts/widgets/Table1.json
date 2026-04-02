@@ -230,7 +230,7 @@
   "parentRowSpace": 10,
   "primaryColumns": {
     "at1": {
-      "alias": "at1",
+      "alias": "W1 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{JSObject1.getColor(currentRow.pl1, currentRow.at1)}}",
@@ -251,7 +251,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "A. W{{SelectedWeek.text}}",
+      "label": "W1 Actual",
       "notation": "standard",
       "originalId": "at1",
       "sticky": "",
@@ -262,7 +262,7 @@
       "width": 150
     },
     "at2": {
-      "alias": "at2",
+      "alias": "W2 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{JSObject1.getColor(currentRow.pl2, currentRow.at2)}}",
@@ -283,7 +283,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "A. W{{Number(SelectedWeek.text) + 1}}",
+      "label": "W2 Actual",
       "notation": "standard",
       "originalId": "at2",
       "sticky": "",
@@ -294,7 +294,7 @@
       "width": 150
     },
     "at3": {
-      "alias": "at3",
+      "alias": "W3 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{JSObject1.getColor(currentRow.pl3, currentRow.at3)}}",
@@ -315,7 +315,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "A. W{{Number(SelectedWeek.text) + 2}}",
+      "label": "W3 Actual",
       "notation": "standard",
       "originalId": "at3",
       "sticky": "",
@@ -326,7 +326,7 @@
       "width": 150
     },
     "at4": {
-      "alias": "at4",
+      "alias": "W4 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{JSObject1.getColor(currentRow.pl4, currentRow.at4)}}",
@@ -347,7 +347,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "A. W{{Number(SelectedWeek.text) + 3}}",
+      "label": "W4 Actual",
       "notation": "standard",
       "originalId": "at4",
       "sticky": "",
@@ -358,7 +358,7 @@
       "width": 150
     },
     "at5": {
-      "alias": "at5",
+      "alias": "W5 Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{JSObject1.getColor(currentRow.pl5, currentRow.at5)}}",
@@ -379,7 +379,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "A. W{{Number(SelectedWeek.text) + 4}}",
+      "label": "W5 Actual",
       "notation": "standard",
       "originalId": "at5",
       "sticky": "",
@@ -492,7 +492,7 @@
       "width": 150
     },
     "pl1": {
-      "alias": "pl1",
+      "alias": "W1 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
@@ -512,7 +512,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "P. W{{SelectedWeek.text}}",
+      "label": "W1 Plan",
       "notation": "standard",
       "originalId": "pl1",
       "sticky": "",
@@ -523,7 +523,7 @@
       "width": 150
     },
     "pl2": {
-      "alias": "pl2",
+      "alias": "W2 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
@@ -543,7 +543,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "P. W{{Number(SelectedWeek.text) + 1}}",
+      "label": "W2 Plan",
       "notation": "standard",
       "originalId": "pl2",
       "sticky": "",
@@ -554,7 +554,7 @@
       "width": 150
     },
     "pl3": {
-      "alias": "pl3",
+      "alias": "W3 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
@@ -574,7 +574,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "P. W{{Number(SelectedWeek.text) + 2}}",
+      "label": "W3 Plan",
       "notation": "standard",
       "originalId": "pl3",
       "sticky": "",
@@ -585,7 +585,7 @@
       "width": 150
     },
     "pl4": {
-      "alias": "pl4",
+      "alias": "W4 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
@@ -605,7 +605,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "P. W{{Number(SelectedWeek.text) + 3}}",
+      "label": "W4 Plan",
       "notation": "standard",
       "originalId": "pl4",
       "sticky": "",
@@ -616,7 +616,7 @@
       "width": 150
     },
     "pl5": {
-      "alias": "pl5",
+      "alias": "W5 Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
@@ -636,7 +636,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "P. W{{Number(SelectedWeek.text) + 4}}",
+      "label": "W5 Plan",
       "notation": "standard",
       "originalId": "pl5",
       "sticky": "",
@@ -681,7 +681,7 @@
       "width": 150
     },
     "tat": {
-      "alias": "tat",
+      "alias": "Total Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.tat > currentRow.tpl? 'red' : 'lightgreen'))}}",
@@ -713,7 +713,7 @@
       "width": 150
     },
     "tpl": {
-      "alias": "tpl",
+      "alias": "Total Plan",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
