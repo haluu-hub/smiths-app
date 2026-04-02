@@ -671,6 +671,7 @@
       "alias": "Total Actual",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{ (Number(Table1.processedTableData[currentIndex].tat) || 0) > (Number(Table1.processedTableData[currentIndex].tpl) || 0) ? '#f296a7' : ((Number(Table1.processedTableData[currentIndex].tat) || 0) < (Number(Table1.processedTableData[currentIndex].tpl) || 0) ? '#48CAE4' : 'transparent') }}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tat\"]))}}",
       "currencyCode": "USD",
@@ -696,8 +697,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150,
-      "cellBackground": "{{ (Number(Table1.processedTableData[currentIndex].tat) || 0) > (Number(Table1.processedTableData[currentIndex].tpl) || 0) ? '#f296a7' : ((Number(Table1.processedTableData[currentIndex].tat) || 0) < (Number(Table1.processedTableData[currentIndex].tpl) || 0) ? '#48CAE4' : 'transparent') }}"
+      "width": 150
     },
     "tpl": {
       "alias": "Total Plan",
